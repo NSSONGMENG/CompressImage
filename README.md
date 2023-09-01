@@ -67,7 +67,7 @@ static CGFloat kDestImageLimitBytes = 30.f * kBytesPerMB;
 #endif
 ```
 
-即在在加载图片时options选项中包含**SDWebImageScaleDownLargeImages**时会对大图进行压缩，默认标准是图片的bitmap占用内存不超过60MB，当然可以通过`SDImageCoderHelper`的方法重置。
+即在在加载图片时options选项中包含`SDWebImageScaleDownLargeImages`时会对大图进行等比缩放，默认标准是图片的bitmap占用内存不超过60MB，当然可以通过`SDImageCoderHelper`的方法重置。
 
 ```Objective-C
 
