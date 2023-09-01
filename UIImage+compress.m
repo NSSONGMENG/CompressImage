@@ -86,7 +86,7 @@
 
 - (NSData *)compressWithLimit:(NSUInteger)kbLimit
 {
-    NSData *aimData = nil
+    NSData *aimData = nil;
     CGFloat compress = 1.0;
     int repeat = 0;
     
