@@ -86,10 +86,10 @@
 
 - (NSData *)compressWithLimit:(NSUInteger)kbLimit
 {
+    NSData *aimData = nil
     CGFloat compress = 1.0;
-    NSData *aimData = UIImageJPEGRepresentation(self, compress);
-    
     int repeat = 0;
+    
     while (repeat < 6 && compress > 0.25) {
         @autoreleasepool {
             aimData = UIImageJPEGRepresentation(self, compress);
